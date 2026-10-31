@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wordly Dictionary</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>📖 Wordly</h1>
+        <p>Your Personal English Dictionary</p>
+
+        <button id="themeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <h2>Discover New Words</h2>
+            <p>Enter a word to discover its meaning.</p>
+
+            <form id="searchForm">
+                <input type="text" id="wordInput" placeholder="Enter a word..." required>
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="message"></p>
+        </section>
+
+        <!-- Dictionary Results -->
+        <section id="results"></section>
+
+        <!-- Favorite Words -->
+        <section class="favorites-section">
+            <h2>⭐ My Favorite Words</h2>
+            <div id="favorites"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Wordly Dictionary. Learn a Word Every Day!</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

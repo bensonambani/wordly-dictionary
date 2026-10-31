@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: #4936a8;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+header button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.search-section {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.search-section h2 {
+    color: #4936a8;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    background: #4936a8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #30227a;
+}
+
+#results {
+    margin-top: 25px;
+}
+
+.word-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000015;
+}
+
+.word-card h2,
+.word-card h3 {
+    color: #4936a8;
+    margin-bottom: 10px;
+}
+
+.definition {
+    border-left: 3px solid #4936a8;
+    padding-left: 12px;
+    margin-top: 12px;
+}
+
+.favorites-section {
+    margin-top: 35px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.favorite-item {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    background: #4936a8;
+    color: white;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #171923;
+    color: white;
+}
+
+body.dark .search-section,
+body.dark .word-card,
+body.dark .favorites-section {
+    background: #252a38;
+    color: white;
+}
+
+body.dark input {
+    background: #171923;
+    color: white;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
